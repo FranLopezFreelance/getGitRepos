@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  max-width: 360px;
+  max-width: 320px;
   margin: 10px auto;
   background: white;
   border-radius: 10px;
@@ -23,7 +23,7 @@ input {
   padding: 8px;
   font-size: 0.9em;
   border-radius: 4px;
-  width: 260px;
+  width: 220px;
 }
 
 button {
