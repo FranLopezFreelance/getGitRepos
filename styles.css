@@ -108,7 +108,7 @@ button:hover {
 }
 
 .repos-list .repo {
-  padding: 12px 8px;
+  padding: 12px 3px;
   border-bottom: 1px solid gray;
 }
 
@@ -118,6 +118,7 @@ button:hover {
 
 .repo-name {
   font-weight: bold;
+  font-size: 0.9em;
 }
 
 .repo-data {
@@ -127,7 +128,7 @@ button:hover {
 }
 
 .repo-stars, .repo-forks {
-  margin: 0px 5px;
+  margin: 0px 2px;
   font-size: 0.8em;
 }
 
