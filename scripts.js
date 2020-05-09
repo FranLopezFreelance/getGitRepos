@@ -115,7 +115,7 @@ const createRepoDataTemplate = (repo) => {
 //Create templates for each repo with templates literal
 const injectNoReposTemplate = () => {
   reposListElement.innerHTML = `<li class="repo">
-            <p class="no-repos">User has no repositpries</p>
+            <p class="no-repos">User has no repositories</p>
           </li>`;
 }
 
