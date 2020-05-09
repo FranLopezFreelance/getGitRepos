@@ -47,10 +47,10 @@ const submit = (e) => {
 //Add event listener for submit event
 getReposFormElement.addEventListener('submit', submit);
 
-
 const validator = (value) => {
   return (value.length > 0 && !(value.trim() == ""));
 }
+
 //Display Elements for searching
 const searching = () => {
   errorBoxElement.style.display = 'none';
