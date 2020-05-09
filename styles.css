@@ -1,0 +1,130 @@
+body {
+  background: rgb(238, 238, 238);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 360px;
+  margin: 10px auto;
+  background: white;
+  border-radius: 10px;
+  padding: 25px 25px 10px;
+  -webkit-box-shadow: 0px 3px 13px 4px rgba(138,138,138,1);
+  -moz-box-shadow: 0px 3px 13px 4px rgba(138,138,138,1);
+  box-shadow: 0px 3px 13px 4px rgba(138,138,138,1);
+}
+
+.form-box {
+  margin-bottom: 15px;
+}
+
+input {
+  border: 1px solid silver;
+  padding: 8px;
+  font-size: 0.9em;
+  border-radius: 4px;
+  width: 260px;
+}
+
+button {
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid silver;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#searching-box {
+  display: none;
+  color: rgb(116, 116, 116);
+  padding: 2px 15px;
+  margin-bottom: 12px;
+}
+
+#error-box {
+  display: none;
+  background: rgb(255, 212, 212);
+  color: rgb(128, 28, 28);
+  padding: 2px 15px;
+  border-radius: 8px;
+  border: 1px solid rgb(214, 214, 214);
+  margin-bottom: 12px;
+}
+
+#results-box {
+  display: none;
+}
+
+.results-header {
+  display: flex;
+  height: 90px;
+  padding: 10px 0px 0px;
+}
+
+/* .github-logo {
+  padding: 0px 10px;
+} */
+
+#user-data {
+  padding: 8px 12px;
+  height: 70px;
+}
+
+.user-name {
+  font-style: italic;
+  font-size: 0.9em;
+  margin: 0px;
+}
+
+.full-name {
+  font-size: 1.4em;
+  margin: 10px 0px 8px;
+}
+
+.bio {
+  font-size: 0.9em;
+  margin: 0px;
+}
+
+.repos-box {
+  margin-top: 2px;
+}
+
+.repos-title {
+  border-bottom: 2px solid black;
+  padding: 8px 0px;
+}
+
+.repos-list {
+  list-style: none;
+  margin-top: -20px;
+  padding: 0px;
+}
+
+.repos-list .repo {
+  padding: 12px 8px;
+  border-bottom: 1px solid gray;
+}
+
+.repos-list li:hover {
+  background: rgb(240, 240, 240);
+}
+
+.repo-name {
+  font-weight: bold;
+}
+
+.repo-data {
+  float: right;
+  line-height: 0.8em;
+  vertical-align: middle;
+}
+
+.repo-stars, .repo-forks {
+  margin: 0px 5px;
+  font-size: 0.8em;
+}
