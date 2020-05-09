@@ -25,7 +25,9 @@ const submit = (e) => {
                 injectUserData(userData);
                 success();
               }else{
-                //
+                injectUserData(userData);
+                injectNoReposTemplate();
+                success();
               }
             })
             .catch((error) => {
@@ -91,8 +93,8 @@ const getReposByUsername = async (userName) => {
 //Create templates for each repo with templates literal
 const createUserDataTemplate = (userData) => {
   return  `<p class="user-name">@${userData.login}</p>
-          <h2 class="full-name">${userData.name}</h2>
-          <p class="bio">${userData.bio || "it doesn't have a bio" }</p>`;
+          <h2 class="full-name">${userData.name || "*" }</h2>
+          <p class="bio">${userData.bio || "*" }</p>`;
 }
 
 //Create templates for each repo with templates literal
@@ -109,6 +111,14 @@ const createRepoDataTemplate = (repo) => {
             </span>
           </li>`;
 }
+
+//Create templates for each repo with templates literal
+const injectNoReposTemplate = () => {
+  reposListElement.innerHTML = `<li class="repo">
+            <p class="no-repos">User has no repositpries</p>
+          </li>`;
+}
+
 
 const injectUserData = (userData) => {
   userDataElement.innerHTML = createUserDataTemplate(userData);
