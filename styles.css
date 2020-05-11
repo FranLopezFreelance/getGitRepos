@@ -24,16 +24,18 @@ input {
   padding: 8px;
   font-size: 0.9em;
   border-radius: 4px;
-  width: 180px;
+  width: 190px;
+  margin-right: 14px;
 }
 
 button {
   display: inline-block;
   padding: 8px;
   border-radius: 3px;
-  border: 1px solid silver;
-  margin-left: 15px;
+  border: 1px solid rgb(167, 167, 167);
   font-weight: bold;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.5410539215686274) 42%, rgba(241,241,241,1) 91%);
 }
 
 button:hover {
@@ -131,3 +133,20 @@ button:hover {
 .no-repos {
   margin: 0px;
 }
+
+#paginator {
+  display: none;
+  width: 300px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+#prev-button, #next-button {
+  margin: 0px 10px;
+}
+
+#paginator-info {
+  color: gray;
+  font-size: 0.8em;
+}
+

@@ -9,6 +9,8 @@
 </head>
 <body>
   <div class="container">
+
+    <!-- FORM BOX -->
     <div class="form-box">
       <form id="get-repos-form" action="#">
         <input type="text" name="userName" 
@@ -16,22 +18,49 @@
         <button type="submit">Search</button>
       </form>
     </div>
+
+    <!-- SEARCHING BOX -->
     <div id="searching-box">
       <p>Searching...</p>
     </div>
+
+    <!-- ERROR BOX -->
     <div id="error-box">
-      <p>Does not exist</p>
+      <p id="error-message"></p>
     </div>
+
+    <!-- RESULTS BOX -->
     <div id="results-box">
       <div class="results-header">
         <img class="github-logo" src="gitHub.svg" width="100px" />
+
+        <!-- USER DATA -->
         <div id="user-data"></div>
+
       </div>
+
+      <!-- REPOS BOX -->
       <div class="repos-box">
         <h2 class="repos-title">Repositories</h2>
-          <ul class="repos-list" id="repos-list"></ul>  
+
+          <!-- REPOS LIST DATA -->
+          <ul class="repos-list" id="repos-list"></ul> 
+          
+        <!-- PAGINATOR -->
+        <div id="paginator">
+          <button id="prev-button" 
+            disabled onclick="chagePage('prev')">
+              Prev
+          </button> 
+          <span id="paginator-info"></span>
+          <button id="next-button" 
+            onclick="chagePage('next')">
+              Next
+          </button>
+        </div>
       </div>
     </div>
+
   </div>
 </body>
 
