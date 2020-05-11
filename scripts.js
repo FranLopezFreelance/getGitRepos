@@ -24,7 +24,7 @@ const submit = (e) => {
   e.preventDefault();
   searching();
   resetVars();
-  //showPaginator(false);
+  showPaginator(false);
   userName = getReposFormElement.elements['userName'].value;
   if(validator(userName)){  
     getUser(userName)
@@ -168,6 +168,7 @@ const calculatePages = () => {
 const showPaginator = (value) => {
   if(value){
     paginatorElement.style.display = 'block';
+    prevButtonElement.disabled = true;
   }else{
     paginatorElement.style.display = 'none';
   }

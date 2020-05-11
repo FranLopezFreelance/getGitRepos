@@ -4,11 +4,11 @@ body {
 }
 
 .container {
-  max-width: 320px;
+  max-width: 330px;
   margin: 10px auto;
   background: white;
   border-radius: 10px;
-  padding: 25px 25px 10px;
+  padding: 20px 10px 10px;
   -webkit-box-shadow: 0px 3px 13px 4px rgba(138,138,138,1);
   -moz-box-shadow: 0px 3px 13px 4px rgba(138,138,138,1);
   box-shadow: 0px 3px 13px 4px rgba(138,138,138,1);
@@ -24,7 +24,7 @@ input {
   padding: 8px;
   font-size: 0.9em;
   border-radius: 4px;
-  width: 190px;
+  width: 200px;
   margin-right: 14px;
 }
 
@@ -110,13 +110,12 @@ button:hover {
   border-bottom: 1px solid gray;
 }
 
-.repos-list li:hover {
+.repos-list .repo:hover {
   background: rgb(240, 240, 240);
 }
 
 .repo-name {
-  font-weight: bold;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 .repo-data {
